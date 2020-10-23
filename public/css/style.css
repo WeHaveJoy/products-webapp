@@ -1,0 +1,60 @@
+body{
+    background-color: darkgray;
+}
+
+.h1{
+    color: burlywood;
+}
+
+
+header{
+    background-color: darkslategray;
+    padding: 10px;
+}
+
+footer{
+    background-color: darkslategray;
+    padding: 10px;
+   }
+
+   .button-primary{
+       color: darkseagreen;
+       font-size: large;
+       background-color: darkslategrey;
+   }
+
+   .clothing{
+        margin: 1em;
+      overflow: hidden;
+   }
+
+   table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  button{
+    color: black;
+    background-color:darkslategrey;
+    border-radius: 14px;
+    font-size: 20px;
+    border: none;
+    padding: 12px 20px;
+    
+  }
+  button:hover{
+    background-color: darkorchid;
+    color: darkseagreen;
+  }
+
+  .cashMoni{
+    padding: 30px;
+  }
+
+  .payment img{
+    width: 10%;
+    height: 10%;
+    background-color: darkslategrey;
+    
+  }
+
