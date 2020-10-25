@@ -1,0 +1,191 @@
+<form action="/shop" method="POST">
+    <header>
+        <div class="row">
+            <p>
+                Copyright &copy; 2020 by Sino. All rights reserved.
+            </p>
+        </div>
+    </header>
+
+    <h2>Purchase your favourite items</h2>
+    <table style="width:100%" class="table">
+
+        <tr>
+            <th>Tops</th>
+            <th>Dresses</th>
+            <th>T-shirts</th>
+            <th>Pants</th>
+            <th>Shoes</th>
+        </tr>
+
+        <tr>
+            <td><img class="clothing" src="pictures/top5.jpg"><br> <input type="checkbox" name="top" value="bra-top">
+                <br>
+                <div class="price">R149.99</div>
+            </td>
+            <td><img class="clothing" src="pictures/dress1.jpg"><br> <input type="checkbox" name="dress"
+                    value="floral-dress"> <br>
+                <div class="price">R225</div>
+            </td>
+            <td><img class="clothing" src="pictures/t-shirt3.jpg"><br> <input type="checkbox" name="tshirt"
+                    value="black-tshirt"> <br>
+                <div class="price">R179</div>
+            </td>
+            <td><img class="clothing" src="pictures/pant1.jpg"><br> <input type="checkbox" name="pant"
+                    value="track-pant">
+                <br>
+                <div class="price">R450</div>
+            </td>
+            <td><img class="clothing" src="pictures/shoe1.jpg"><br> <input type="checkbox" name="shoe"
+                    value="formal-shoe"><br>
+                <div class="price">R299.00</div>
+            </td>
+        </tr>
+        <tr>
+            <td><img class="clothing" src="pictures/top3.jpg"><br> <input type="checkbox" name="top"
+                    value="crop-jersey">
+                <br>
+                <div class="price">R299</div>
+            </td>
+            <td><img class="clothing" src="pictures/dress2.jpg"><br> <input type="checkbox" name="dress"
+                    value="sun-flower-dress"> <br>
+                <div class="price">279</div>
+            </td>
+            <td><img class="clothing" src="pictures/t-shirt1.jpg"><br> <input type="checkbox" name="tshirt"
+                    value="tshirt"> <br>
+                <div class="price">R200</div>
+            </td>
+            <td><img class="clothing" src="pictures/pant2.jpg"><br> <input type="checkbox" name="pant" value="pant">
+                <br>
+                <div class="price">R300</div>
+            </td>
+            <td><img class="clothing" src="pictures/shoe2.jpg"><br> <input type="checkbox" name="shoe"
+                    value="sneaker"><br>
+                <div class="price">R350.00</div>
+            </td>
+
+        </tr>
+        <tr>
+            <td><img class="clothing" src="pictures/top4.jpg"><br> <input type="checkbox" name="top" value="crop-top">
+                <br>
+                <div class="price">R200</div>
+            </td>
+            <td><img class="clothing" src="pictures/dress3.jpg"><br> <input type="checkbox" name="dress"
+                    value="coloured-dress"> <br>
+                <div class="price">R200</div>
+            </td>
+            <td><img class="clothing" src="pictures/t-shirt2.jpg"><br> <input type="checkbox" name="tshirt"
+                    value="grey-tshirt"> <br>
+                <div class="price">R170</div>
+            </td>
+            <td><img class="clothing" src="pictures/pant3.jpg"><br> <input type="checkbox" name="pant"
+                    value="yellow-pant">
+                <br>
+                <div class="price">R400</div>
+            </td>
+            <td><img class="clothing" src="pictures/shoe3.jpg"><br> <input type="checkbox" name="shoe"
+                    value="brown-sendals"><br>
+                <div class="price">R250.00</div>
+            </td>
+
+        </tr>
+
+    </table>
+
+    <br> <br>
+    <section class="section-form" id="contact" id="form">
+        <div class="row">
+            <h2>please fill in your details</h2>
+        </div>
+        <div class="row">
+            <form class="contact-form">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="fname" id="fname" placeholder="Enter your first name" required>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="lname" name="lname" id="lname" placeholder="Enter your last name" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="find-us">Age</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <select name="age" id="age">
+                            <option value="16" selected>16</option>
+                            <option value="17" selected>17</option>
+                            <option value="18" selected>18</option>
+                            <option value="19" selected>19</option>
+                            <option value="20" selected>20</option>
+                            <option value="21" selected>21</option>
+                            <option value="22" selected>22</option>
+                            <option value="23" selected>23</option>
+                            <option value="24" selected>24</option>
+                            <option value="25" selected>25</option>
+                            <option value="26" selected>26</option>
+                            <option value="27" selected>27</option>
+                            <option value="27" selected>28</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="location">location</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="location" name="location" id="location" placeholder="Your location" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Note</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" placeholder="Leave any special requests here."></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        {{!-- <a href="/payment"><input type="submit" value="Get Bill" name="button"></a> --}}
+                        <a href="/payment"> <button class="button-primary" type="submit" name="button">GET
+                                BILL</button></a>
+                    </div>
+                </div>
+            </form>
+
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                {{!-- <ul class="footer-nav">
+                        <li><a href="/about">About Us</a></li>
+                    </ul> --}}
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Copyright &copy; 2020 by Sino. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</form>

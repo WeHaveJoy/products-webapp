@@ -1,90 +1,58 @@
-{{!-- <!DOCTYPE html>
-<html lang="en"> --}}
-
-<!-- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
-    <br><br><title>Document</title>
-    <link href="style.css" rel="stylesheet">
-
-</head> -->
-
 <body>
+    <div class="back">
+        <header>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2020 by Sino. All rights reserved.
+                </p>
+            </div>
+        </header>
 
-    <form action="/" method="POST">
-        <header> Nandi's clothing label</header>
+        <form action="/" method="POST">
+            
+                <nav>
+                    <div class="row">
+                        {{!-- <a href="index.html"><img src="pictures/logo.png" alt="Nandi's Emporium" class="logo"></a> --}}
+                        <img src="pictures/logo.png" alt="Nandi's Emporium" class="logo-black">
+                        <br>
+                        <br>
+                        <ul class="main-nav js-main-nav">
+                            <li><a href="/about">About Us</a></li>
+                            {{!-- <li><a href="#">Shop</a></li> --}}
+                            {{!-- <li><a href="#">Enquiries</a></li> --}}
+                        </ul>
+                        <a class="mobile-nav-icon js-nav-icon"><i class="ion-toggle"></i></a>
+                    </div>
+                </nav>
+                <br><br>
+                <div class="hero-text-box">
+                    <h1 class="heading">Welcome to Nandi's Clothing Emporium</h1>
+                    <br><br>
+                    {{!-- <a class="btn btn-full js-scroll-to-section-projects" href="#">Shop</a> --}}
+                    <a class="btn btn-ghost js-scroll-to-section-packages" href="/shop">SHOP</a>
+                </div>
 
-        <div class="container">
-            <h1>WELCOME TO NANDI'S CLOTHING LABEL</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
 
-            <ul>
-                <li><a href="/about">About</a></li>
-            </ul>
+            <footer>
+                <div class="row">
+                    <p>
+                        Copyright &copy; 2020 by Sino. All rights reserved.
+                    </p>
+                </div>
+            </footer>
 
-        </div>
-
-        <div>
-            <img class="clothing" src="/pictures/images.jpg">
-        </div>
-
-        <br> <br>
-
-        <form>
-            <h2>PLEASE FILL IN YOUR DETAILS BELOW</h2>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" placeholder="enter first name" required><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" placeholder="enter last name" required><br>
-            <label for="age">Age:</label><br>
-            <input type="text" id="age" name="age" placeholder="enter age" required>
         </form>
-        <br><br>
-
-        <br><br>
-
-        <h2>Choose your favourite items</h2>
-        <table style="width:100%" class="table">
-
-            <tr>
-                <th>Tops</th>
-                <th>Dresses</th>
-                <th>T-shirts</th>
-                <th>Pants</th>
-                <th>Shoes</th>
-                {{!-- <th>Hats</th>  --}}
-            </tr>
-            <tr>
-                <td><img class="clothing" src="/pictures/top2.jpg"><br> <button>Add to chart</button></td>
-                <td><img class="clothing" src="/pictures/dress1.jpg"><br> <button>Add to chart</button></td>
-                <td><img class="clothing" src="/pictures/t-shirt3.jpg"><br> <button>Add to chart</button></td>
-                <td><img class="clothing" src="/pictures/pant1.jpg"><br> <button>Add to chart</button></td>
-                <td><img class="clothing" src="/pictures/shoe1.jpg"><br> <button>Add to chart</button></td>
-            </tr>
-            <tr>
-                <td><img class="clothing" src="/pictures/top3.jpg"><br> <button>Add to chart</button></td>
-                <td><img class="clothing" src="/pictures/dress2.jpg"><br> <button>Add to chart</button></td>
-                <td><img class="clothing" src="/pictures/t-shirt1.jpg"><br> <button>Add to chart</button></td>
-                <td><img class="clothing" src="/pictures/pant2.jpg"><br> <button>Add to chart</button></td>
-                <td><img class="clothing" src="/pictures/shoe2.jpg"><br> <button>Add to chart</button></td>
-
-            </tr>
-            <tr>
-                <td><img class="clothing" src="/pictures/top4.jpg"><br> <button>Add to chart</button></td>
-                <td><img class="clothing" src="/pictures/dress3.jpg"><br> <button>Add to chart</button></td>
-                <td><img class="clothing" src="/pictures/t-shirt2.jpg"><br> <button>Add to chart</button></td>
-                <td><img class="clothing" src="/pictures/pant3.jpg"><br> <button>Add to chart</button></td>
-                <td><img class="clothing" src="/pictures/shoe3.jpg"><br> <button>Add to chart</button></td>
-
-            </tr>
-
-        </table>
-        <br> <br>
-        <div>
-            <a href="/payment"> <button class="button-primary" type="submit" name="button">GET BILL</button></a>
-        </div>
-        <br><br>
-        <footer>&copy; Nandi's clothing label</footer>
-    </form>
+    </div>
 </body>

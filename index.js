@@ -58,16 +58,30 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
+app.get('/', function (req, res) {
+    res.render('index')
+})
 
+app.get('/shop', function (req, res) {
+    res.render('shop')
+})
 
-app.get('/',async function (req, res) {
+app.post('/shop', async function (req, res) {
     try {
-        const name = _.capitalize(req.body.fname);
-        const surname = _.capitalize(req.body.lname);
-        const Age = req.body.age;
-         const info = await pool.query("insert into customer(Firstname, Lastname, Age) values($1, $2, $3)", [name, surname, Age]);
+        const top = req.body.top;
+        const dress = req.body.dress;
+        const tshirt = req.body.tshirt;
+        const shoe = req.body.shoe;
+        const price = req.body.price;
+        const fname = _.capitalize(req.body.fname);
+        const lname = _.capitalize(req.body.lname);
+        const location = _.capitalize(req.body.location);
+        const age = req.body.age;
 
-        res.render('index')
+        const products = await pool.query("insert into products(tops, dresses, tshirts, shoes, price) values($1, $2, $3, $4, $5)", [top, dress, tshirt, price, shoe]);
+        const info = await pool.query("insert into customer(Firstname, Lastname, Age, Location) values($1, $2, $3, $4)", [fname, lname, age, location]);
+
+        res.render('shop')
     } catch (error) {
         console.log(error);
     }
@@ -84,7 +98,7 @@ app.get('/',async function (req, res) {
 
 app.get('/payment', async function (req, res) {
 
-        res.render('payment')
+    res.render('payment')
 });
 
 app.get('/about', async function (req, res) {
