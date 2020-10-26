@@ -72,16 +72,18 @@ app.post('/shop', async function (req, res) {
         const dress = req.body.dress;
         const tshirt = req.body.tshirt;
         const shoe = req.body.shoe;
+        const pant = req.body.pant;
         const price = req.body.price;
+        // console.log(price);
         const fname = _.capitalize(req.body.fname);
         const lname = _.capitalize(req.body.lname);
         const location = _.capitalize(req.body.location);
         const age = req.body.age;
 
-        const products = await pool.query("insert into products(tops, dresses, tshirts, shoes, price) values($1, $2, $3, $4, $5)", [top, dress, tshirt, price, shoe]);
+        const products = await pool.query("insert into products(tops, dresses, tshirts, shoes, pants, price) values($1, $2, $3, $4, $5, $6)", [top, dress, tshirt, price, shoe, pant]);
         const info = await pool.query("insert into customer(Firstname, Lastname, Age, Location) values($1, $2, $3, $4)", [fname, lname, age, location]);
 
-        res.render('shop')
+        res.render('payment')
     } catch (error) {
         console.log(error);
     }
@@ -113,6 +115,11 @@ app.get('/card', function (req, res) {
 app.get('/cash', function (req, res) {
     res.render('cash')
 });
+
+app.get('/enquiry', function (req, res) {
+    res.render('enquiry')
+});
+
 
 const PORT = process.env.PORT || 3008
 app.listen(PORT, function () {

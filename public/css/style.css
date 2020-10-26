@@ -38,6 +38,10 @@ footer{
     border-collapse: collapse;
   }
 
+  .texts{
+    text-align: center;
+  }
+
   button{
     color: black;
     background-color:darkslategrey;
@@ -62,6 +66,10 @@ footer{
     background-color: darkslategrey;
     
   } 
+
+  .enquiry{
+    text-align: center;
+  }
  
 
   /* * {

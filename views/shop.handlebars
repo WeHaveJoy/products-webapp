@@ -21,71 +21,71 @@
         <tr>
             <td><img class="clothing" src="pictures/top5.jpg"><br> <input type="checkbox" name="top" value="bra-top">
                 <br>
-                <div class="price">R149.99</div>
+                <div class="price" name="price">R149.99</div>
             </td>
             <td><img class="clothing" src="pictures/dress1.jpg"><br> <input type="checkbox" name="dress"
                     value="floral-dress"> <br>
-                <div class="price">R225</div>
+                <div class="price" name="price">R225</div>
             </td>
             <td><img class="clothing" src="pictures/t-shirt3.jpg"><br> <input type="checkbox" name="tshirt"
                     value="black-tshirt"> <br>
-                <div class="price">R179</div>
+                <div class="price" name="price">R179</div>
             </td>
             <td><img class="clothing" src="pictures/pant1.jpg"><br> <input type="checkbox" name="pant"
                     value="track-pant">
                 <br>
-                <div class="price">R450</div>
+                <div class="price" name="price">R450</div>
             </td>
             <td><img class="clothing" src="pictures/shoe1.jpg"><br> <input type="checkbox" name="shoe"
                     value="formal-shoe"><br>
-                <div class="price">R299.00</div>
+                <div class="price" name="price">R299.00</div>
             </td>
         </tr>
         <tr>
             <td><img class="clothing" src="pictures/top3.jpg"><br> <input type="checkbox" name="top"
                     value="crop-jersey">
                 <br>
-                <div class="price">R299</div>
+                <div class="price" name="price" value="299">R299</div>
             </td>
             <td><img class="clothing" src="pictures/dress2.jpg"><br> <input type="checkbox" name="dress"
                     value="sun-flower-dress"> <br>
-                <div class="price">279</div>
+                <div class="price" name="price">279</div>
             </td>
             <td><img class="clothing" src="pictures/t-shirt1.jpg"><br> <input type="checkbox" name="tshirt"
                     value="tshirt"> <br>
-                <div class="price">R200</div>
+                <div class="price" name="price">R200</div>
             </td>
             <td><img class="clothing" src="pictures/pant2.jpg"><br> <input type="checkbox" name="pant" value="pant">
                 <br>
-                <div class="price">R300</div>
+                <div class="price" name="price">R300</div>
             </td>
             <td><img class="clothing" src="pictures/shoe2.jpg"><br> <input type="checkbox" name="shoe"
                     value="sneaker"><br>
-                <div class="price">R350.00</div>
+                <div class="price" name="price">R350.00</div>
             </td>
 
         </tr>
         <tr>
             <td><img class="clothing" src="pictures/top4.jpg"><br> <input type="checkbox" name="top" value="crop-top">
                 <br>
-                <div class="price">R200</div>
+                <div class="price" name="price">R200</div>
             </td>
             <td><img class="clothing" src="pictures/dress3.jpg"><br> <input type="checkbox" name="dress"
                     value="coloured-dress"> <br>
-                <div class="price">R200</div>
+                <div class="price" name="price">R200</div>
             </td>
             <td><img class="clothing" src="pictures/t-shirt2.jpg"><br> <input type="checkbox" name="tshirt"
                     value="grey-tshirt"> <br>
-                <div class="price">R170</div>
+                <div class="price" name="price">R170</div>
             </td>
             <td><img class="clothing" src="pictures/pant3.jpg"><br> <input type="checkbox" name="pant"
                     value="yellow-pant">
                 <br>
-                <div class="price">R400</div>
+                <div class="price" name="price">R400</div>
             </td>
             <td><img class="clothing" src="pictures/shoe3.jpg"><br> <input type="checkbox" name="shoe"
                     value="brown-sendals"><br>
-                <div class="price">R250.00</div>
+                <div class="price" name="price">R250.00</div>
             </td>
 
         </tr>
@@ -163,13 +163,15 @@
                     <div class="col span-1-of-3">
                         <label>&nbsp;</label>
                     </div>
-                    <div class="col span-2-of-3">
-                        {{!-- <a href="/payment"><input type="submit" value="Get Bill" name="button"></a> --}}
-                        <a href="/payment"> <button class="button-primary" type="submit" name="button">GET
-                                BILL</button></a>
-                    </div>
-                </div>
             </form>
+
+            <div class="col span-2-of-3">
+                {{!-- <a href="/payment"><input type="submit" value="Get Bill" name="button"></a> --}}
+                <a href="/payment"> <button>GET
+                        BILL</button></a>
+            </div>
+        </div>
+
 
     </section>
 
